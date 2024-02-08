@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-slate-200">
-    <header class="bg-blue-700 h-40 flex justify-center items-center">
+    <header class="bg-blue-700 h-40 flex justify-center items-center mb-5">
       <div class="flex flex-col gap-3 items-center">
         <h1 class="text-orange-400 text-4xl font-['Inter Tight'] font-bold">
           CYBERDUDE
@@ -28,6 +28,7 @@
               <input
                 type="text"
                 id="fullName"
+                name="fullName"
                 placeholder="Full Name"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               />
@@ -36,11 +37,21 @@
               <div class="flex flex-col gap-2 justify-center">
                 <p class="font-medium">Gender</p>
                 <div class="flex gap-4 items-center">
-                  <input type="radio" name="gender" id="male" />
+                  <input type="radio" name="gender" value="Male" id="male" />
                   <label for="male">Male</label>
-                  <input type="radio" name="gender" id="female" />
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                    id="female"
+                  />
                   <label for="female">Female</label>
-                  <input type="radio" name="gender" id="others" />
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Others"
+                    id="others"
+                  />
                   <label for="others">others</label>
                 </div>
               </div>
@@ -52,6 +63,7 @@
               <input
                 type="email"
                 id="emailId"
+                name="emailId"
                 placeholder="Email Address"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               />
@@ -62,6 +74,7 @@
               <input
                 type="date"
                 id="dob"
+                name="dob"
                 placeholder="D.O.B"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               />
@@ -75,6 +88,7 @@
               <input
                 type="text"
                 id="skill"
+                name="skill"
                 placeholder="Skills seperated by"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               />
@@ -84,25 +98,25 @@
               <label for="experience" class="font-medium">Experience?</label>
               <select
                 id="experience"
-                name="cars"
+                name="experience"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               >
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+                <option value="">select experience</option>
+                <option value="0.6">less than 6 months</option>
+                <option value="2">less than 2 years</option>
+                <option value="3">morr than 3 years</option>
               </select>
             </div>
           </div>
           <div class="flex gap-6 justify-center items-center">
             <div class="flex flex-col gap-2 flex-1">
-              <label for="carrer" class="font-medium"
+              <label for="carrier" class="font-medium"
                 >Did cyberdude change your carrer?</label
               >
               <textarea
-                name="data"
+                name="carrier"
                 placeholder="Explain in detailed"
-                id="carrer"
+                id="carrier"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               ></textarea>
             </div>
@@ -112,7 +126,7 @@
                 >Have you attended any course completions?</label
               >
               <textarea
-                name="data"
+                name="course"
                 placeholder="Mentioned briefly"
                 id="course"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
@@ -121,12 +135,13 @@
           </div>
           <div class="flex gap-6 justify-center items-center">
             <div class="flex flex-col gap-2 flex-1">
-              <label for="carrer" class="font-medium"
-                >Did cyberdude change your carrer?</label
+              <label for="studies" class="font-medium"
+                >Studies & Year of Graduation</label
               >
               <input
                 type="text"
-                id="carrer"
+                id="studies"
+                name="studies"
                 placeholder="Explain in detailed"
                 class="bg-slate-200 px-3 py-2 rounded-lg w-1/2"
               />
@@ -138,7 +153,8 @@
               <input
                 type="text"
                 id="linkedIn"
-                placeholder="InkedIn url"
+                name="linkedIn"
+                placeholder="linkedIn url"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               />
             </div>
@@ -150,6 +166,7 @@
               <input
                 type="text"
                 id="github"
+                name="github"
                 placeholder="GitHUb Profile link"
                 class="bg-slate-200 px-3 py-2 rounded-lg"
               />
@@ -161,7 +178,7 @@
                 >Why you need to join this internship?</label
               >
               <textarea
-                name="data"
+                name="interested"
                 placeholder="What you feel..."
                 id="interested"
                 cols="30"
@@ -172,11 +189,11 @@
           </div>
           <div>
             <div class="flex gap-2">
-              <input type="checkbox" name="checked" id="terms" />
+              <input type="checkbox" name="termsChecked" id="terms" />
               <label for="terms">I accept the terms & Conditions</label>
             </div>
             <div class="flex gap-2">
-              <input type="checkbox" name="checked" id="terms" />
+              <input type="checkbox" name="rulesChecked" id="terms" />
               <label for="terms"
                 >I do understand, that if I'm not performing well,I'll
                 volumarily remove from this internship</label
@@ -249,5 +266,7 @@
         </button>
       </div>
     </section>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
