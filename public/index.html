@@ -6,5 +6,248 @@
     <title>Rewards App</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-yellow-100"></body>
+  <body class="bg-slate-200">
+    <header class="bg-blue-700 h-40 flex justify-center items-center">
+      <div class="flex flex-col gap-3 items-center">
+        <h1 class="text-orange-400 text-4xl font-['Inter Tight'] font-bold">
+          CYBERDUDE
+        </h1>
+        <p class="text-white">FREE EDUCATION FOR EVERYONE</p>
+      </div>
+    </header>
+    <main class="p-12 flex gap-5">
+      <div class="bg-white rounded-lg p-10 flex-1 min-h-screen">
+        <h1 class="font-bold">Get Free Internship @ CyberDude</h1>
+        <p class="text-sm py-2">
+          Get yourself skilled by joining cyberdude internship
+        </p>
+        <form action="#" class="py-5 space-y-4">
+          <div class="flex justify-center gap-6">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="fullName" class="font-medium">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Full Name"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              />
+            </div>
+            <div class="flex flex-1">
+              <div class="flex flex-col gap-2 justify-center">
+                <p class="font-medium">Gender</p>
+                <div class="flex gap-4 items-center">
+                  <input type="radio" name="gender" id="male" />
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female" />
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="others" />
+                  <label for="others">others</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-6 justify-center items-center">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="emailId" class="font-medium">Email Address</label>
+              <input
+                type="email"
+                id="emailId"
+                placeholder="Email Address"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="dob" class="font-medium">Date of Birth</label>
+              <input
+                type="date"
+                id="dob"
+                placeholder="D.O.B"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="flex gap-6 justify-center items-center">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="skill" class="font-medium"
+                >What skill do you know already?</label
+              >
+              <input
+                type="text"
+                id="skill"
+                placeholder="Skills seperated by"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="experience" class="font-medium">Experience?</label>
+              <select
+                id="experience"
+                name="cars"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              >
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex gap-6 justify-center items-center">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="carrer" class="font-medium"
+                >Did cyberdude change your carrer?</label
+              >
+              <textarea
+                name="data"
+                placeholder="Explain in detailed"
+                id="carrer"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              ></textarea>
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="course" class="font-medium"
+                >Have you attended any course completions?</label
+              >
+              <textarea
+                name="data"
+                placeholder="Mentioned briefly"
+                id="course"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              ></textarea>
+            </div>
+          </div>
+          <div class="flex gap-6 justify-center items-center">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="carrer" class="font-medium"
+                >Did cyberdude change your carrer?</label
+              >
+              <input
+                type="text"
+                id="carrer"
+                placeholder="Explain in detailed"
+                class="bg-slate-200 px-3 py-2 rounded-lg w-1/2"
+              />
+            </div>
+          </div>
+          <div class="flex gap-6 justify-center items-center">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="linkedIn" class="font-medium">LinkedIn Profile</label>
+              <input
+                type="text"
+                id="linkedIn"
+                placeholder="InkedIn url"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="github" class="font-medium"
+                >Github Profile Link</label
+              >
+              <input
+                type="text"
+                id="github"
+                placeholder="GitHUb Profile link"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="flex gap-6 justify-center items-center">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="interested" class="font-medium"
+                >Why you need to join this internship?</label
+              >
+              <textarea
+                name="data"
+                placeholder="What you feel..."
+                id="interested"
+                cols="30"
+                rows="10"
+                class="bg-slate-200 px-3 py-2 rounded-lg"
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <div class="flex gap-2">
+              <input type="checkbox" name="checked" id="terms" />
+              <label for="terms">I accept the terms & Conditions</label>
+            </div>
+            <div class="flex gap-2">
+              <input type="checkbox" name="checked" id="terms" />
+              <label for="terms"
+                >I do understand, that if I'm not performing well,I'll
+                volumarily remove from this internship</label
+              >
+            </div>
+          </div>
+          <div>
+            <button class="bg-orange-500 text-white rounded-lg px-3 py-2">
+              Apply
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bg-white rounded-lg w-96 p-10 h-fit">
+        <h1 class="font-bold">Terms & Conditions</h1>
+        <p class="text-md py-2">
+          make sure you saatisfied the before requirements.
+        </p>
+        <div class="space-y-2">
+          <ul class="list-disc pl-5 text-sm">
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+              provident et officiis saepe, vel amet quos earum vitae quasi est
+              omnis, cum sunt qui autem.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+              provident et officiis saepe, vel amet quos earum vitae quasi est
+              omnis, cum sunt qui autem.
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus, quia!
+            </li>
+          </ul>
+          <p class="text-md text-start text-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nemo?
+          </p>
+          <ul class="list-disc pl-5 text-sm">
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+              provident et officiis saepe, vel amet quos earum vitae quasi est
+              omnis, cum sunt qui autem.
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+              provident et officiis saepe, vel amet quos earum vitae quasi est
+              omnis, cum sunt qui autem.
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus, quia!
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <section
+      class="flex items-start gap-5 bg-white w-fit px-14 py-8 rounded-lg m-auto hidden"
+    >
+      <div class="text-2xl">😎</div>
+      <div class="">
+        <h1 class="font-bold">Thank you.We received your application</h1>
+        <p class="text-md pb-2">
+          Your application has beeb successfully registered
+        </p>
+        <button class="bg-blue-600 px-3 py-2 rounded-lg text-white">
+          Share
+        </button>
+      </div>
+    </section>
+  </body>
 </html>
