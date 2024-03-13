@@ -1,14 +1,43 @@
 const mainEl =document.querySelector("main")
 const sectionEl =document.querySelector("section")
-console.log(mainEl)
-console.log(sectionEl)
+// console.log(mainEl)
+// console.log(sectionEl)
 const formEl=mainEl.querySelector("form")
-console.log(formEl)
+//console.log(formEl)
 
-formEl.addEventListener('submit',(event)=>{
+const validateAll =()=>{
+    let elements =formEl.elements
+    for (const element of elements) {
+        if(!element.hasAttribute("required")){
+            element.required = true;
+            return false
+        }
+        else{
+            return true;
+        }
+        
+    }
+
+}
+
+formEl.addEventListener("submit",(event)=>{
     event.preventDefault()
-   sectionEl.classList.remove("hidden")
-   mainEl.classList.add("hidden")
-   const formDataValue=new FormData(formEl)
-   console.log([...formDataValue.entries()])
+    if(validateAll()){
+        const formDatas =new FormData(formEl)
+   // console.log([...formDatas.entries()])
+    const obj =Object.fromEntries(formDatas)
+   // console.log(obj)
+    addData(obj)
+    updateUI()
+    }
+    else{
+        validateAll()
+    }
+    
+   
 })
+
+const updateUI =()=>{
+    mainEl.classList.add("hidden")
+    sectionEl.classList.remove("hidden")
+}
